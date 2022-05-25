@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study-lab</title>
+    <style>
+        #navBar{
+            border: 1px solid red;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+           
+
+        }
+        #navBar>div{
+            display: flex;
+            border: 1px solid blue;
+            font-size: 22px;
+            font-style: normal;
+            
+        }
+        #navBar>div+div{
+            display: flex;
+            border: 1px solid green;
+            width: 40%;
+            justify-content: space-evenly;
+            font-weight: bold;
+            
+        }
+        #navBar>div+div>p:hover{
+            color: blue;
+        }
+        #navBar>div>h2{
+            color: white;
+            background-color: #656de5;
+        }
+    </style>
+</head>
+<body>
+    <div id="navBar">
+        <div>
+            <h2>StudyLab</h2>
+        </div>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Course</p>
+            <p>Instructor</p>
+            <p>Blog</p>
+            <p>Contacts</p>
+        </div>
+    </div>
+
+</body>
+</html>
