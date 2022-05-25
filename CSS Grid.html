@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            
+            width: 70%;
+            height: 400px;
+            display: grid;
+            margin: auto;
+            margin-top: 100px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 20px;
+            grid-template-areas: 
+            "t1 t2 t2 t4"
+            "t5 t5 t7 t8"
+            "t9 t10 t11 t11"
+        }
+        #main>div{
+            border-radius: 4px;
+            background-color: teal;
+        }
+        #main>div:nth-child(1) {
+        grid-area: t1;
+        }
+        #main>div:nth-child(2) {
+            grid-area: t2;
+    }
+    #main>div:nth-child(3) {
+        grid-area: t2; 
+    }
+    #main>div:nth-child(4) {
+        grid-area: t4;
+    }
+    #main>div:nth-child(5) {
+        grid-area: t5;
+    }
+    #main>div:nth-child(6) {
+        grid-area: t5;
+    }
+    #main>div:nth-child(7) {
+        grid-area: t7;
+    }
+    #main>div:nth-child(8) {
+        grid-area: t8;
+    }
+    #main>div:nth-child(9) {
+        grid-area: t9;
+    }
+    #main>div:nth-child(10) {
+        grid-area: t10;
+    }
+    #main>div:nth-child(11) {
+        grid-area: t11;
+    }
+    #main>div:nth-child(12) {
+        grid-area: t11;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>
