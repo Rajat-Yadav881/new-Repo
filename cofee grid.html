@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{            
+            width: 75%;   
+            box-shadow: rgba(197, 152, 83, 0.25) 0px 54px 55px, rgba(197, 152, 83, 0.25) 0px -12px 30px, rgba(197, 152, 83, 0.25) 0px 4px 6px, rgba(197, 152, 83, 0.25) 0px 12px 13px, rgba(197, 152, 83, 0.25) 0px -3px 5px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,200px);  
+            gap: 20px;   
+            margin: auto;
+            margin-top: 50px;
+            border: transparent;    
+        }
+        #main>div{
+
+            border-radius: 8px;
+            box-shadow: rgba(197, 152, 83, 0.25) 0px 54px 55px, rgba(197, 152, 83, 0.25) 0px -12px 30px, rgba(197, 152, 83, 0.25) 0px 4px 6px, rgba(197, 152, 83, 0.25) 0px 12px 13px, rgba(197, 152, 83, 0.25) 0px -3px 5px;
+        }
+        .deep{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .deep>p+p{
+            color: rgb(185, 150, 97);
+        }
+        .deep+p{
+            text-align: center;
+            font-size: 15px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <div class="deep">
+                <p>capichino</p>
+                <p>$49</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p>
+        </div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+        <div><div class="deep">
+            <p>capichino</p>
+            <p>$49</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem!</p></div>
+    </div>
+</body>
+</html>

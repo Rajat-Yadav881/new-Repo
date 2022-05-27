@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            width: 70%;
+            margin: auto;
+            padding-top: 60px;            
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 20px ;
+            grid-template-areas: 
+            "ra ra rc rd"
+            "re rf rc rd"
+            ;   
+              
+        }
+        #main>div{
+            background-color:rgb(41, 40, 40) ;
+            width: 100%;
+            font-size: 50px;
+            color: aliceblue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        #main>div:nth-child(4){
+            padding-bottom: 450px;
+        }
+        #main>div:nth-child(1){
+            
+            grid-area: ra;
+        }
+        #main>div:nth-child(2){
+            
+            grid-area: rb;
+        }
+        #main>div:nth-child(3){
+            
+            grid-area: rc;
+        }
+        #main>div:nth-child(4){
+            
+            grid-area: rd;
+        }
+        #main>div:nth-child(5){
+            
+            grid-area: re;
+        }
+        #main>div:nth-child(6){
+            
+            grid-area: rf;
+        }
+        #main>div:nth-child(7){
+            
+            grid-area: rg;
+        }
+        #main>div:nth-child(8){
+           
+            grid-area: rh;
+            background-color: white;
+            border: transparent;
+        }      
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

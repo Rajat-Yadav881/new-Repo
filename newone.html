@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+
+            margin: auto;
+            margin-top: 50px;
+            width: 40%;
+            height: 500px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap: 20px;
+            
+            grid-template-areas: 
+            "r1 r1 r2 r2"
+            "r3 r4 r4 r4"
+            "r5 r5 r5 r5"
+            ;
+        }
+        #main>div{
+            display: grid;
+            color: aliceblue;  
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        #main>div:nth-child(1){
+            background-color: gray;
+            grid-area: r1;
+        }
+        #main>div:nth-child(2){
+            background-color: gray;
+            grid-area: r2;
+        }
+        #main>div:nth-child(3){
+            background-color: gray;
+            grid-area: r3;
+        }
+        #main>div:nth-child(4){
+            background-color: gray;
+            grid-area: r4;
+        }
+        #main>div:nth-child(5){
+            background-color: gray;
+            grid-area: r5;
+        }
+        #main>div:nth-child(6){
+            
+            grid-area: r6;
+        }
+        #main>div:nth-child(7){
+           
+            grid-area: r7;
+        }
+        #main>div:nth-child(8){
+           
+            grid-area: r8;
+        }
+        #main>div:nth-child(9){
+            
+            grid-area: r9;
+        }
+        #main>div:nth-child(10){
+          
+            grid-area: r10;
+        }
+        #main>div:nth-child(11){
+            
+            grid-area: r11;
+        }
+        #main>div:nth-child(12){
+           
+            grid-area: r12;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+    </div>
+</body>
+</html>
